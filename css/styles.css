@@ -7,6 +7,7 @@
   --button-color: #f5f4fa;
   --background-color: #2f303a;
   --border-color: #eeeeee;
+  --features-background-color: #f5f4fa;
 }
 
 html {
@@ -161,7 +162,23 @@ html {
   padding-bottom: 200px;
 
   text-align: center;
-  background-color: #ccc;
+}
+
+.hero-overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header/header-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -183,6 +200,7 @@ html {
   border: none;
   min-width: 200px;
   padding: 10px 32px;
+  cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--accent-text-color);
@@ -219,6 +237,36 @@ html {
 
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.textbox-features {
+  padding-top: 30px;
+}
+
+.features-item::before {
+  display: block;
+  height: 120px;
+  content: '';
+  background-color: var(--button-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-list .title {
