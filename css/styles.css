@@ -224,13 +224,6 @@ html {
   display: flex;
 }
 
-.features-picture {
-  display: block;
-  margin-bottom: 30px;
-
-  /* background-color: #ccc; */
-}
-
 .features-item {
   width: calc((100% - 90px) / 4);
 }
@@ -273,8 +266,7 @@ html {
   margin-top: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
-  /* background-color: #ccc; */
-}
+  }
 
 .description-features {
   margin-top: 0;
