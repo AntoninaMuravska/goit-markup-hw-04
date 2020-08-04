@@ -108,13 +108,6 @@ html {
   letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contact-nav .link:hover,
-.contact-nav .link:focus {
-  color: var(--accent-color);
-}
-
 .site-nav {
   display: flex;
   margin-left: 85px;
@@ -126,6 +119,13 @@ html {
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
 }
 
 .site-nav .link {
@@ -142,6 +142,8 @@ html {
 }
 
 .contact-nav .link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -153,6 +155,20 @@ html {
 
 .contact-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.email-link-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.phone-link-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero */
@@ -266,7 +282,7 @@ html {
   margin-top: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
-  }
+}
 
 .description-features {
   margin-top: 0;
