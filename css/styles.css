@@ -388,6 +388,10 @@ html {
   background-color: var(--accent-color);
 }
 
+.social-icon {
+  fill: currentColor;
+}
+
 .socials-item {
   width: calc((100% - 30px) / 4);
   justify-content: center;
@@ -397,18 +401,6 @@ html {
   margin-right: 10px;
 }
 
-.social-icon {
-  fill: currentColor;
-}
-
-/* .social-icon {
-  --color3: var(--icon-color);
-}
-
-.social-icon:hover {
-  --color3: #fff;
-} */
-
 /* Clients */
 .clients-list {
   display: flex;
@@ -416,15 +408,32 @@ html {
 
 .clients-item {
   width: calc((100% - 150px) / 6);
+  border-radius: 4px;
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link,
-.clients-img {
-  display: block;
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 /* Footer */
@@ -479,6 +488,15 @@ html {
 }
 .join {
   margin-right: 94px;
+}
+
+.footer .social-link {
+  color: var(--accent-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover {
+  background-color: var(--accent-color);
 }
 
 /* Form */
